@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple Audio</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <!-- Google Fonts için preconnect ve stylesheet linkleri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/magnific-popup.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/font-awesome.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/nowfont.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/rockville.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/animate.css') }}" />
+  </head>
+
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-2">
+            <div class="header__logo">
+              <a href="/"><img src="./static/image/logo.png" alt /></a>
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-10">
+            <div class="header__nav">
+              <nav class="header__menu">
+                <ul>
+                  <li class="active"><a href="/">Home</a></li>
+                  <li><a href="./login.html">Login</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="header__right__social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero set-bg" data-setbg="./static/image/hero-image.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="hero__text">
+              <span>SIMPLE AUDIO</span>
+              <h1>Müziğin Güzel Hali</h1>
+              <a href="#makeYourChoice">
+                <div class="linear__icon">
+                  <i class="fa fa-angle-double-down"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Begin -->
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="about__text">
+            <div class="section-title">
+              <h2>SIMPLE AUDIO</h2>
+              <h1>ABOUT US</h1>
+            </div>
+            <p>
+              Simple Audio, müzik prodüksiyonunu bir adım öteye taşıyan
+              yenilikçi bir platformdur. Profesyonel stüdyoların yanı sıra müzik
+              teorisi bilmeyen herkes için, ses dosyalarını parçalayarak MIDI
+              notalarına dönüştürme ve özelleştirme imkanı sunar. Ücretsiz,
+              deneyimli ve profesyonel abonelik seçenekleri ile kullanıcılarına
+              esneklik sağlar, ayrıca lirik çıkarma ve kelime temelli müzik
+              üretme gibi ek özelliklerle müzik yaratımını sınırsızlaştırır.
+            </p>
+            <button type="submit" class="buttonstyle">CONTACT US</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services">
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center">
+          <div
+            class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+            <div class="service__item">
+              <i class="fa fa-sitemap" aria-hidden="true"></i>
+              <h4>Stem Çıkartma</h4>
+              <p>
+                Simple Audio ile ses dosyalarınızı vocals, drums, bass ve
+                diğerleri olarak dört ayrı stemse bölerek, istediğiniz
+                enstrümanın MIDI notalarını kolayca çıkartın.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+            <div class="service__item">
+              <i class="fa fa-music" aria-hidden="true"></i>
+              <h4>Notaları Önizle ve İndir</h4>
+              <p>
+                Çıkartılan MIDI notalarını önizleyin ve beğendiğiniz melodiyi
+                indirerek kendi projelerinizde kullanın.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters justify-content-center">
+          <div
+            class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+            <div class="service__item">
+              <i class="fa fa-microphone" aria-hidden="true"></i>
+              <h4>Islık Çalarak Melodi Yaratma</h4>
+              <p>
+                Müzik teorisi bilmeyen kullanıcılar için, projeye herhangi bir
+                ses kaydı yükleyerek veya ıslık çalarak melodi oluşturun. Yapay
+                zeka notalara çevirsin, siz sadece keyfini çıkarın.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+            <div class="service__item">
+              <i class="fa fa-credit-card" aria-hidden="true"></i>
+              <h4>Kişiselleştirilmiş Abonelikler</h4>
+              <p>
+                Ücretsiz, deneyimli ve profesyonel abonelik seçenekleri ile
+                ihtiyaçlarınıza uygun bir plan seçin. Esnek fiyatlandırma ve
+                kullanım hakkı avantajlarıyla müzik yapımınızı daha özgür kılın.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Make Your Choice Section Begin -->
+    <section id="makeYourChoice" class="makeYourChoice">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>SEÇİMİNİ YAP</h2>
+              <h1>MAKE YOUR CHOICE</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <a href="#stems-midi-forms">
+              <div
+                class="makeYourChoice__item"
+                onclick="showStemsMidiForms(); hiddenAll();">
+                <div
+                  class="makeYourChoice__item__pic set-bg"
+                  data-setbg="./static/image/stemmidi.jpg"></div>
+                <div class="makeYourChoice__item__text">
+                  <h4>Stems + MIDI</h4>
+                  <p>
+                    Simple Audio ile ses dosyalarını stemlere ayırın,
+                    istediğiniz
+                    enstrümanın MIDI notalarını çıkarın. Müziğinizi
+                    şekillendirin,
+                    projelerinizi kişiselleştirin, yaratıcılığınıza sınırsız bir
+                    özgürlük katın.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 offset-lg-4 col-sm-6">
+            <a href="#only-midi-forms">
+              <div
+                class="makeYourChoice__item"
+                onclick="showOnlyMidiForm(); hiddenAll();">
+                <div
+                  class="makeYourChoice__item__pic set-bg"
+                  data-setbg="./static/image/onlymidi.jpg"></div>
+                <div
+                  class="makeYourChoice__item__text"
+                  style="text-align: center">
+                  <h4>Only MIDI</h4>
+                  <p>
+                    Simple Audio sayesinde ses dosyalarınızı MIDI'ye dönüştürün
+                    ve
+                    notalarınızı özelleştirin. Yaratıcılığınızı ön plana
+                    çıkararak, melodi oluşturmanın keyfini çıkarın. Müzik
+                    yapmanın
+                    kolay ve eğlenceli yolunu keşfedin.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Make Your Choice Section End -->
+
+    <!-- Upload Selection Section Begin -->
+    <div id="stems-midi-forms" style="display: none">
+      <section class="makeYourChoice spad">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title">
+                <h2>SES DOSYASINI YÜKLE</h2>
+                <h1>UPLOAD AUDIO FILE</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <a href="#local-upload-form">
+                <div class="makeYourChoice__item" onclick="showLocalForm()">
+                  <div
+                    class="makeYourChoice__item__pic set-bg"
+                    data-setbg="./static/image/local.jpg"></div>
+                  <div
+                    class="makeYourChoice__item__text"
+                    style="text-align: center">
+                    <h4>STEMS+MIDI</h4>
+                    <h4>LOCAL</h4>
+                    <p>
+                      Projelerinize kişisel dokunuş katmak için lokal
+                      dosyalarınızı yükleyin. Kendi kayıtlarınızı, en sevdiğiniz
+                      melodileri veya özel ses efektlerinizi projelerinize
+                      ekleyerek müziğinizi daha özel hale getirin.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <a href="#link-upload-form">
+                <div class="makeYourChoice__item" onclick="showLinkForm()">
+                  <div
+                    class="makeYourChoice__item__pic set-bg"
+                    data-setbg="./static/image/link.jpg"></div>
+                  <div
+                    class="makeYourChoice__item__text"
+                    style="text-align: center">
+                    <h4>STEMS+MIDI</h4>
+                    <h4>LINK</h4>
+                    <p>
+                      İlham kaynağınız YouTube ise, sadece linki ekleyin! Simple
+                      Audio, YouTube linkleri üzerinden hızlıca ses
+                      dosyalarınızı
+                      içe aktararak, sevdiğiniz şarkılardan ilham almanızı
+                      sağlar.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <a href="#record-upload-form">
+                <div class="makeYourChoice__item" onclick="showRecordForm()">
+                  <div
+                    class="makeYourChoice__item__pic set-bg"
+                    data-setbg="./static/image/record.jpg"></div>
+                  <div
+                    class="makeYourChoice__item__text"
+                    style="text-align: center">
+                    <h4>STEMS+MIDI</h4>
+                    <h4>RECORD</h4>
+                    <p>
+                      Yaratıcılığınızın anında patlamasını yakalayın! Simple
+                      Audio, ses kaydınızı alır ve hemen projenize eklemenizi
+                      sağlar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="only-midi-forms" style="display: none">
+        <section class="makeYourChoice spad">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-title">
+                  <h2>SES DOSYASINI YÜKLE</h2>
+                  <h1>UPLOAD AUDIO FILE</h1>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <a href="#only-midi-local-upload-form">
+                  <div
+                    class="makeYourChoice__item"
+                    onclick="showOnlyMidiLocalForm()">
+                    <div
+                      class="makeYourChoice__item__pic set-bg"
+                      data-setbg="./static/image/local.jpg"></div>
+                    <div
+                      class="makeYourChoice__item__text"
+                      style="text-align: center">
+                      <h4>ONLY MIDI LOCAL</h4>
+                      <p>
+                        Kendi ses dosyalarınızı ekleyerek projenize özel bir
+                        dokunuş
+                        katın. Simple Audio ile lokal dosyalarınızı yükleyin ve
+                        sadece MIDI notalarını alın, müziğinizi kişiselleştirin.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <a href="#only-midi-link-upload-form">
+                  <div
+                    class="makeYourChoice__item"
+                    onclick="showOnlyMidiLinkForm()">
+                    <div
+                      class="makeYourChoice__item__pic set-bg"
+                      data-setbg="./static/image/link.jpg"></div>
+                    <div
+                      class="makeYourChoice__item__text"
+                      style="text-align: center">
+                      <h4>ONLY MIDI LINK</h4>
+                      <p>
+                        Sadece YouTube linki ekleyin ve müziğinizi MIDI
+                        notalarına
+                        dönüştürün. Simple Audio, hızlı ve kolayca YouTube ses
+                        dosyalarını almanın keyfini sunar.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <a href="#record-upload-form">
+                  <div class="makeYourChoice__item" onclick="showRecordForm()">
+                    <div
+                      class="makeYourChoice__item__pic set-bg"
+                      data-setbg="./static/image/record.jpg"></div>
+                    <div
+                      class="makeYourChoice__item__text"
+                      style="text-align: center">
+                      <h4>ONLY MIDI RECORD</h4>
+                      <p>
+                        Simple Audio ile ses kaydınızı alın ve hemen MIDI
+                        notalarını
+                        çıkarın. Anında müzik yapmanın ve yaratıcılığınızı ifade
+                        etmenin tadını çıkarın.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="form-buttons" style="text-align: center">
+        <form
+          id="local-upload-form"
+          class="upload-form"
+          method="POST"
+          enctype="multipart/form-data"
+          action="/from-local"
+          style="display: none">
+          <i class="fa fa-upload" aria-hidden="true"></i>
+          <p>Dosyayı yüklemek için sürekleyin ya da alt alana tıklayın.</p>
+          <p id="secilenDosya"></p>
+          <input type="file" name="file" accept=".wav, .mp3, .flac" />
+          <button type="submit" class="buttonstyle">Dosyayı Yükle</button>
+        </form>
+
+        <form
+          id="only-midi-local-upload-form"
+          class="upload-form"
+          method="POST"
+          enctype="multipart/form-data"
+          action="only-midi-from-local"
+          style="display: none">
+          <i class="fa fa-upload" aria-hidden="true"></i>
+          <p>Dosyayı yüklemek için sürekleyin ya da alt alana tıklayın.</p>
+          <p id="secilenDosyaOnly"></p>
+          <input type="file" name="file" accept=".wav, .mp3, .flac" />
+          <button type="submit" class="buttonstyle">Dosyayı Yükle</button>
+        </form>
+
+        <form
+          id="link-upload-form"
+          method="POST"
+          enctype="multipart/form-data"
+          action="/from-link"
+          style="display: none">
+          <label for="youtube_url" class="label-style"><p>Please Enter The
+              Link</p></label>
+          <input type="text" id="youtube_url" name="youtube_url" required />
+          <button type="submit" class="buttonstyle">İndir</button>
+        </form>
+
+        <form
+          id="only-midi-link-upload-form"
+          method="POST"
+          enctype="multipart/form-data"
+          action="/only-midi-from-link"
+          style="display: none">
+          <label for="youtube_url" class="label-style"><p>Please Enter The
+              Link</p></label>
+          <input type="text" id="youtube_url" name="youtube_url" required />
+          <button type="submit" class="buttonstyle">İndir</button>
+        </form>
+
+        <form
+          id="record-upload-form"
+          method="POST"
+          enctype="multipart/form-data"
+          style="display: none">
+          <div id="controls">
+            <button id="recordButton">
+              <i class="fa fa-microphone" aria-hidden="true"></i>
+            </button>
+            <button id="pauseButton" disabled>
+              <i
+                class="fa fa-pause-circle"
+                id="pauseButtonIcon"
+                aria-hidden="true"></i>
+              <div id="timerDisplay">0:00</div>
+            </button>
+            <button id="stopButton" disabled>
+              <i class="fa fa-stop-circle" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div id="formats">Format: start recording to see sample rate</div>
+          <ol id="recordingsList"></ol>
+        </form>
+      </div>
+      <!-- Upload Selection Section End -->
+
+      <div id="Results"></div>
+
+      <div class="video-container">
+        {% if youtube_video_id %}
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/{{ youtube_video_id }}"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        {% endif %}
+      </div>
+
+      <!-- Track Section Begin -->
+      <section class="track spad" id="audioResults">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title">
+                {% if uploaded_file_filename %}
+                <h2>SONUÇLAR</h2>
+                <h1>RESULTS</h1>
+                <p>Yüklenen Dosya Adı: {{ uploaded_file_filename }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            {% if uploaded_file_name_with_ext %}
+            <div id="onlyMidiDisplay" style="text-align: center; width: 100%">
+              <div class="audio-title">
+                <h4>Original Audio</h4>
+              </div>
+              <div class="single_player_container">
+                <audio controls class="audioStyle">
+                  <source
+                    src="/uploads/{{ uploaded_file_name_with_ext }}"
+                    type="audio/wav" />
+                </audio>
+                <div class="button-container">
+                  <form method="POST" action="/convert-to-midi">
+                    <input
+                      type="hidden"
+                      name="filename"
+                      value="{{ uploaded_file_filename }}" />
+                    <input type="hidden" name="target" value="original" />
+                    <button type="submit">Convert to MIDI</button>
+                  </form>
+                  <a href="/uploads/{{ uploaded_file_name_with_ext }}" download>
+                    <button>
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                      Download
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div id="allStemsDisplay" style="text-align: center; width: 100%">
+              <div class="single_player_container">
+                <div class="audio-title">
+                  <h4>Original Audio</h4>
+                </div>
+                <audio controls class="audioStyle">
+                  <source
+                    src="/uploads/{{ uploaded_file_name_with_ext }}"
+                    type="audio/wav" />
+                </audio>
+                <div class="button-container">
+                  <form method="POST" action="/convert-to-midi">
+                    <input
+                      type="hidden"
+                      name="filename"
+                      value="{{ uploaded_file_filename }}" />
+                    <input type="hidden" name="target" value="original" />
+                    <div class="convert-button">
+                      <button type="submit" class="buttonstyle">
+                        Convert to MIDI
+                      </button>
+                    </div>
+                  </form>
+                  <a href="/uploads/{{ uploaded_file_name_with_ext }}" download>
+                    <button class="buttonstyle">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                      Download
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="single_player_container">
+                <div class="audio-title">
+                  <h4>Vocals</h4>
+                </div>
+                <audio controls class="audioStyle">
+                  <source
+                    src="/listen/htdemucs_6s/{{ uploaded_file_filename }}/vocals"
+                    type="audio/wav" />
+                </audio>
+                <div class="button-container">
+                  <form method="POST" action="/convert-to-midi">
+                    <input
+                      type="hidden"
+                      name="filename"
+                      value="{{ uploaded_file_filename }}" />
+                    <input type="hidden" name="target" value="vocals" />
+                    <div class="convert-button">
+                      <button type="submit" class="buttonstyle">
+                        Convert to MIDI
+                      </button>
+                    </div>
+                  </form>
+                  <a
+                    href="/listen/htdemucs_6s/{{ uploaded_file_filename }}/vocals"
+                    download>
+                    <button class="buttonstyle">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                      Download
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="single_player_container">
+                <div class="audio-title">
+                  <h4>Drums</h4>
+                </div>
+                <audio controls class="audioStyle">
+                  <source
+                    src="/listen/htdemucs_6s/{{ uploaded_file_filename }}/drums"
+                    type="audio/wav" />
+                </audio>
+                <div class="button-container">
+                  <form method="POST" action="/convert-to-midi">
+                    <input
+                      type="hidden"
+                      name="filename"
+                      value="{{ uploaded_file_filename }}" />
+                    <input type="hidden" name="target" value="drums" />
+                    <div class="convert-button">
+                      <button type="submit" class="buttonstyle">
+                        Convert to MIDI
+                      </button>
+                    </div>
+                  </form>
+                  <a
+                    href="/listen/htdemucs_6s/{{ uploaded_file_filename }}/drums"
+                    download>
+                    <button class="buttonstyle">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                      Download
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="single_player_container">
+                <div class="audio-title">
+                  <h4>Bass</h4>
+                </div>
+                <audio controls class="audioStyle">
+                  <source
+                    src="/listen/htdemucs_6s/{{ uploaded_file_filename }}/bass"
+                    type="audio/wav" />
+                </audio>
+                <div class="button-container">
+                  <form method="POST" action="/convert-to-midi">
+                    <input
+                      type="hidden"
+                      name="filename"
+                      value="{{ uploaded_file_filename }}" />
+                    <input type="hidden" name="target" value="bass" />
+                    <div class="convert-button">
+                      <button type="submit" class="buttonstyle">
+                        Convert to MIDI
+                      </button>
+                    </div>
+                  </form>
+                  <a
+                    href="/listen/htdemucs_6s/{{ uploaded_file_filename }}/bass"
+                    download>
+                    <button class="buttonstyle">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                      Download
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="single_player_container">
+                <div class="audio-title">
+                  <h4>Piano</h4>
+                </div>
+                <audio controls class="audioStyle">
+                  <source
+                    src="/listen/htdemucs_6s/{{ uploaded_file_filename }}/piano"
+                    type="audio/wav" />
+                </audio>
+                <div class="button-container">
+                  <form method="POST" action="/convert-to-midi">
+                    <input
+                      type="hidden"
+                      name="filename"
+                      value="{{ uploaded_file_filename }}" />
+                    <input type="hidden" name="target" value="piano" />
+                    <div class="convert-button">
+                      <button type="submit" class="buttonstyle">
+                        Convert to MIDI
+                      </button>
+                    </div>
+                  </form>
+                  <a
+                    href="/listen/htdemucs_6s/{{ uploaded_file_filename }}/piano"
+                    download>
+                    <button class="buttonstyle">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                      Download
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="single_player_container">
+                <div class="audio-title">
+                  <h4>Guitar</h4>
+                </div>
+                <audio controls class="audioStyle">
+                  <source
+                    src="/listen/htdemucs_6s/{{ uploaded_file_filename }}/guitar"
+                    type="audio/wav" />
+                </audio>
+                <div class="button-container">
+                  <form method="POST" action="/convert-to-midi">
+                    <input
+                      type="hidden"
+                      name="filename"
+                      value="{{ uploaded_file_filename }}" />
+                    <input type="hidden" name="target" value="guitar" />
+                    <div class="convert-button">
+                      <button type="submit" class="buttonstyle">
+                        Convert to MIDI
+                      </button>
+                    </div>
+                  </form>
+                  <a
+                    href="/listen/htdemucs_6s/{{ uploaded_file_filename }}/guitar"
+                    download>
+                    <button class="buttonstyle">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                      Download
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="single_player_container">
+                <div class="audio-title">
+                  <h4>Other</h4>
+                </div>
+                <audio controls class="audioStyle">
+                  <source
+                    src="/listen/htdemucs_6s/{{ uploaded_file_filename }}/other"
+                    type="audio/wav" />
+                </audio>
+                <div class="button-container">
+                  <form method="POST" action="/convert-to-midi">
+                    <input
+                      type="hidden"
+                      name="filename"
+                      value="{{ uploaded_file_filename }}" />
+                    <input type="hidden" name="target" value="other" />
+                    <div class="convert-button">
+                      <button type="submit" class="buttonstyle">
+                        Convert to MIDI
+                      </button>
+                    </div>
+                  </form>
+                  <a
+                    href="/listen/htdemucs_6s/{{ uploaded_file_filename }}/other"
+                    download>
+                    <button class="buttonstyle">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                      Download
+                    </button>
+                  </a>
+                </div>
+              </div>
+              {% if success_message %}
+              <div style="color: green; margin-bottom: 10px">
+                <strong>{{ success_message }}</strong>
+              </div>
+              {% endif %}
+              <p><a href="/">Ana Sayfa</a></p>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </section>
+      <!-- Track Section End -->
+
+      {% if target %}
+      <div class="single_player_container">
+        <h4>Midi Player</h4>
+
+        <section class="MIDI-section" id="MIDI-section">
+          <midi-player
+            id="myMidiPlayer"
+            src="/output/{{ uploaded_file_filename }}/{{ target }}"
+            sound-font
+            visualizer="#MIDI-section midi-visualizer"></midi-player>
+
+          <midi-visualizer
+            class="myPianoRollVisualizer"
+            type="piano-roll"
+            src="/output/{{ uploaded_file_filename }}/{{ target }}"></midi-visualizer>
+
+          <midi-visualizer
+            class="myPianoRollVisualizer"
+            type="staff"
+            src="/output/{{ uploaded_file_filename }}/{{ target }}"></midi-visualizer>
+          <a
+            href="/output/{{ uploaded_file_filename }}/{{ target }}"
+            download>
+            <button class="buttonstyle">
+              <i class="fa fa-download" aria-hidden="true"></i>
+              Download
+            </button>
+          </a>
+        </section>
+      </div>
+      {% endif %} {% endif %}
+
+      <!-- Js Plugins -->
+      <script
+        src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+      <script
+        src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+      <script
+        src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+      <script
+        src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+      <script
+        src="{{ url_for('static', filename='js/jquery.nicescroll.min.js') }}"></script>
+      <script
+        src="{{ url_for('static', filename='js/jquery.barfiller.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+      <!-- Music Plugin -->
+      <script
+        src="{{ url_for('static', filename='js/jquery.jplayer.min.js') }}"></script>
+      <script
+        src="{{ url_for('static', filename='js/jplayerInit.js') }}"></script>
+
+      <script>
+      function hiddenAll(){
+        document.getElementById("audioResults").style.display = "none";
+        document.getElementById("MidiPlayer").style.display = "none";
+        document.getElementById("local-upload-form").style.display = "none";
+        document.getElementById("link-upload-form").style.display = "none";
+        document.getElementById("record-upload-form").style.display = "none";
+        document.getElementById("only-midi-local-upload-form").style.display =
+          "none";
+        document.getElementById("only-midi-link-upload-form").style.display =
+          "none";
+      }
+
+      function showStemsMidiForms() {
+        document.getElementById("stems-midi-forms").style.display = "block";
+        document.getElementById("only-midi-forms").style.display = "none";
+         sendSelectedValue('stems-midi')
+      }
+
+      function showOnlyMidiForm() {
+        document.getElementById("stems-midi-forms").style.display = "none";
+        document.getElementById("only-midi-forms").style.display = "block";
+         sendSelectedValue('only-midi')
+      }
+
+      function showLocalForm() {
+        document.getElementById("local-upload-form").style.display = "block";
+        document.getElementById("link-upload-form").style.display = "none";
+        document.getElementById("record-upload-form").style.display = "none";
+        document.getElementById("only-midi-local-upload-form").style.display =
+          "none";
+        document.getElementById("only-midi-link-upload-form").style.display =
+          "none";
+      }
+
+      function showLinkForm() {
+        document.getElementById("local-upload-form").style.display = "none";
+        document.getElementById("link-upload-form").style.display = "block";
+        document.getElementById("record-upload-form").style.display = "none";
+        document.getElementById("only-midi-local-upload-form").style.display =
+          "none";
+        document.getElementById("only-midi-link-upload-form").style.display =
+          "none";
+      }
+
+      function showRecordForm() {
+        document.getElementById("local-upload-form").style.display = "none";
+        document.getElementById("link-upload-form").style.display = "none";
+        document.getElementById("record-upload-form").style.display = "block";
+        document.getElementById("only-midi-local-upload-form").style.display =
+          "none";
+        document.getElementById("only-midi-link-upload-form").style.display =
+          "none";
+      }
+      
+      function showOnlyMidiLocalForm() {
+        document.getElementById("local-upload-form").style.display = "none";
+        document.getElementById("link-upload-form").style.display = "none";
+        document.getElementById("record-upload-form").style.display = "none";
+        document.getElementById("only-midi-local-upload-form").style.display =
+          "block";
+        document.getElementById("only-midi-link-upload-form").style.display =
+          "none";
+      }
+
+      function showOnlyMidiLinkForm() {
+        document.getElementById("local-upload-form").style.display = "none";
+        document.getElementById("link-upload-form").style.display = "none";
+        document.getElementById("record-upload-form").style.display = "none";
+        document.getElementById("only-midi-local-upload-form").style.display =
+          "none";
+        document.getElementById("only-midi-link-upload-form").style.display =
+          "block";
+      }
+
+           // JavaScript ile belirli bir öğeye kaydırma işlemi
+      {% if scroll_to_element_id %}
+      var element = document.getElementById("{{ scroll_to_element_id }}");
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      {% endif %}
+
+      {% if audioplayers_display %}
+      var displayData = "{{ audioplayers_display }}";  // Flask tarafından gelen veriyi al
+      var onlyMidiDisplay = document.getElementById("onlyMidiDisplay");
+      var allStemsDisplay = document.getElementById("allStemsDisplay");
+
+      if (displayData === "only_midi") {
+          onlyMidiDisplay.style.display = "block";
+          allStemsDisplay.style.display = "none";
+      }
+      else if (displayData === "all_stems") {
+          onlyMidiDisplay.style.display = "none";
+          allStemsDisplay.style.display = "block";
+      }
+      {% endif %}
+
+
+      function sendSelectedValue(selectedValue) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/process_selected_value", true);
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+        // Gönderilecek veriyi JSON formatına çevir
+        var data = JSON.stringify({ selected_value: selectedValue });
+
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            // İşlem başarılı, gelen yanıtı al
+            var response = JSON.parse(xhr.responseText);
+            console.log(response.message);
+          } else {
+            // İşlem başarısız, hata durumunu logla
+            console.error("İstek tamamlanamadı. Hata kodu: " + xhr.status);
+          }
+        };
+
+        // Veriyi gönder
+        xhr.send(data);
+      }
+    </script>
+    </body>
+  </html>

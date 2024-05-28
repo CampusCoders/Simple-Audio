@@ -1,0 +1,72 @@
+/* Genel stiller */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dosya yükleme formu ile indirme formu arasında boşluk ekleyin */
+#local-upload-form {
+  margin-top: 20px;
+}
+
+#youtube-upload-form {
+  margin-top: 20px;
+}
+
+#record-form {
+  margin-top: 20px;
+}
+
+/* Butonların bulunduğu div'i stilleyin */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* İstediğiniz genişliği ayarlayabilirsiniz */
+}
+
+/* Buton stilini düzenleyin */
+.button-container button {
+  width: 30%; /* Her bir butonun genişliği */
+}
+
+.stems-midi-forms {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* İstediğiniz genişliği ayarlayabilirsiniz */
+}
+
+.stems-midi-forms button {
+  width: 30%; /* Her bir butonun genişliği */
+}
+
+#deleteButton {
+    /* İstediğiniz stil kurallarını burada tanımlayın */
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#deleteButton:hover {
+    /* İstediğiniz hover (üzerine gelindiğinde) stilini burada tanımlayın */
+    background-color: #c0392b;
+}
+
+
+.audio-controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+audio {
+  margin-right: 10px;
+}
+
+.convert-button {
+  margin-left: 10px;
+  margin-top: 10px;
+}
